@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <!-- Add bootstrap css cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Add Slick css -->
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css" />
+
+    <title>Lionel Messi - Football Player</title>
+</head>
+
+<body>
+    <div class="main-content mx-auto">
+        <header class="container-fluid p-0 navbar-expand-lg">
+            <nav class="fixed-top shadow navbar-expand-lg navbar-dark bg-dark p-3">
+                <div class="container-fluid">
+                    <div class="row col">
+                        <div class="col-2">
+                            <button type="button" class="btn btn-outline-secondary p-1 px-2" data-bs-toggle="modal"
+                                data-bs-target="#searchModal">
+                                <i class="bi bi-search"></i>
+                            </button>
+
+                        </div>
+                        <div class="col-8 text-center">
+                            <a class="navbar-brand" href="#">
+                                Lionel Messi
+                            </a>
+                        </div>
+                        <div class="subs col-2 text-end">
+                            <a class="btn btn-outline-secondary p-1 px-2" href="#">
+                                Subscribe
+                            </a>
+                        </div>
+                        <div class="col-2 text-end">
+                            <button class="navbar-toggler p-1 px-2" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-collapse navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container-fluid py-2">
+                        <div class="collapse navbar-collapse row text-center" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+                                <li class="nav-item col-12 col-md-3">
+                                    <a class="dropbtn nav-link active" aria-current="page" href="#">
+                                        Videos
+                                    </a>
+                                </li>
+                                <li class="nav-item col-12 col-md-3">
+                                    <a class="dropbtn nav-link active" href="#">Record</a>
+                                </li>
+                                <li class="nav-item col-12 col-md-3">
+                                    <a class="dropbtn nav-link active" href="#">Topics & Tags</a>
+                                </li>
+                                <li class="dropdown nav-item col-12 col-md-3">
+                                    <a class="dropbtn nav-link active">More</a>
+                                    <div class="dropdown-content justify-content-center">
+                                        <a href="#">Sport</a>
+                                        <a href="#">Foundation</a>
+                                        <a href="#">Holiday</a>
+                                    </div>
+                                </li>
+                                <div class="nav-subs nav-item col-12 col-md-3">
+                                    <a class="btn btn-outline-secondary p-1 px-2 col-lg" href="#">
+                                        Subscribe
+                                    </a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="container-fluid px-0" data-spy="scroll" data-offset="0" style="margin-top:69px !important">
+            <nav class="navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid py-2">
+                    <div class="collapse navbar-collapse row text-center" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+                            <li class="nav-item col-12 col-md-3">
+                                <a class="dropbtn nav-link active" aria-current="page" href="#">
+                                    Videos
+                                </a>
+                            </li>
+                            <li class="nav-item col-12 col-md-3">
+                                <a class="dropbtn nav-link active" href="#">Record</a>
+                            </li>
+                            <li class="nav-item col-12 col-md-3">
+                                <a class="dropbtn nav-link active" href="#">Topics & Tags</a>
+                            </li>
+                            <li class="dropdown nav-item col-12 col-md-3">
+                                <a class="dropbtn nav-link active">More</a>
+                                <div class="dropdown-content justify-content-center">
+                                    <a href="#">Sport</a>
+                                    <a href="#">Foundation</a>
+                                    <a href="#">Holiday</a>
+                                </div>
+                            </li>
+                            <div class="nav-subs nav-item col-12 col-md-3">
+                                <a class="btn btn-outline-secondary p-1 px-2 col-lg" href="#">
+                                    Subscribe
+                                </a>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <section class="jumbotron-section p-5 pt-md-11">
+                <div class="container-fluid">
+                    <div class="row g-1 g-md-3 align-items-center">
+
+                        <div class="col-12 col-md-5 order-md-3">
+                            <!-- Image -->
+                            <img src="assets/img/personal.png"
+                                class="img-jumbotron img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0 aos-init aos-animate"
+                                alt="..." data-aos="fade-up" data-aos-delay="100">
+                        </div>
+                        <div class="col-12 col-md-1 order-md-2">
+                        </div>
+                        <div class="col-12 col-md-6 order-md-1 aos-init aos-animate" data-aos="fade-up">
+
+                            <!-- Heading -->
+                            <h3 class="title-jumbotron display-6 text-center text-md-start text-white font-weight-bold">
+                                The Lionel Messi Story: How Did He Get To The Top Of The World?
+                            </h3>
+
+                            <!-- Text -->
+                            <p class="lead text-center text-md-start text-white mb-6 mb-lg-8">
+                                Lionel Messi is one of the world’s best soccer players. The Argentinean-born footballer
+                                currently plays for the Spanish champion FC Barcelona. His skills have already earned
+                                him a fortune. The 23-year old Messi is said to have a contract that gives him about 50
+                                million dollars a year.
+                            </p>
+
+                            <!-- Buttons -->
+                            <div class="text-center text-md-start">
+                                <div class="episode card mb-3 shadow" style="max-width: 400px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="assets/img/card.jpeg" width="80%"
+                                                class="img-responsive center-block d-block mx-auto my-auto" alt="..."
+                                                style="margin-top: 20px !important; border-radius: 6% !important;">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">LEO GOAL</h5>
+                                                <p class="card-text">“Nobody plays the way Messi does He is like a
+                                                    child, not interested in tactics and winning. He just wants to play
+                                                    and enjoy it. “</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ecard mb-3 shadow text-center"
+                                    style="max-width: 400px; background-color: none !important;">
+                                    <div class="row g-2">
+                                        <a href="" class="btn-episode col btn btn-primary">
+                                            Messi Club
+                                        </a>
+                                        <a href="" class="btn-episode col-md-7 btn btn-primary">
+                                            Watch To The Video
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="channel py-3 pt-md-11" style="border: 1px solid #212510 !important;">
+                <div class="container-fluid">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-2 col-md-6">
+                            <img class="w-100"
+                                src="https://assets-global.website-files.com/5f46baf9863467a01b1aaab9/5f47938df703cc23c3f591a1_ds-logo-billboard.svg"
+                                alt="channel">
+                        </div>
+                        <div class="col-lg-2 col-md-6">
+                            <img class="w-100"
+                                src="https://assets-global.website-files.com/5f46baf9863467a01b1aaab9/5f47938dac97a14ded1bc1cc_ds-logo-nytimes.svg"
+                                alt="channel">
+                        </div>
+                        <div class="col-lg-2 col-md-6">
+                            <img class="w-100"
+                                src="https://assets-global.website-files.com/5f46baf9863467a01b1aaab9/5f47938d45fe451a495bd105_ds-logo-bloomberg.svg"
+                                alt="channel">
+                        </div>
+                        <div class="col-lg-2 col-md-6">
+                            <img class="w-100"
+                                src="https://assets-global.website-files.com/5f46baf9863467a01b1aaab9/5f47938d82cc6d271fee4843_ds-logo-washpost.svg"
+                                alt="channel">
+                        </div>
+                        <div class="col-lg-2 col-md-6">
+                            <img class="w-100"
+                                src="https://assets-global.website-files.com/5f46baf9863467a01b1aaab9/5f47938d0744f5accf1a88a2_ds-logo-espn.svg"
+                                alt="channel">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="present p-2 pt-md-11 pb-5" style="border: 1px solid #212510 !important;">
+                <div class="container p-5">
+                    <div class="slick-col">
+                        <div class="col">
+                            <div class="card-comment card" style="border-radius: 20px !important; height:38rem;">
+                                <img src="assets/img/cards/1.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="container">
+                                        <h5 class="card-title">Guardiola: Having Messi was like Phil Jackson having
+                                            Michael Jordan</h5>
+                                        <p class="card-text">"What does Messi mean? Everything, everything, Messi is
+                                            like Michael Jordan," Guardiola said in an interview with Ole. "It's like
+                                            when Phil Jackson could feel that feeling that everything was flowing and
+                                            there were no problems. "I owe him a good bottle of wine to thank him for
+                                            the contracts he allowed me to sign.""
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="container">
+                                        <h6 class="notes">Show Notes ></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card-comment card" style="border-radius: 20px !important; height:38rem;">
+                                <img src="assets/img/cards/2.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="container">
+                                        <h5 class="card-title">Jose Mourinho Talks Lionel Messi, Real Madrid, Barcelona
+                                            and La Liga</h5>
+                                        <p class="card-text">"I was in Spain, but I didn't enjoy. I didn't enjoy it
+                                            because I won a title with a record in Spain with 100 points and 121 goals,
+                                            but we played only three or four matches all season. I lost a title with 92
+                                            points, but again we played only four or five matches in the season."</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="container">
+                                        <h6 class="notes">Show Notes ></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card-comment card" style="border-radius: 20px !important; height:38rem;">
+                                <img src="assets/img/cards/3.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="container">
+                                        <h5 class="card-title">Klopp: I like Messi more, but Ronaldo...</h5>
+                                        <p class="card-text">"For me it's Messi, but I couldn't admire Ronaldo any more
+                                            than I already do," he told YouTube channel Freekickerz. "This is my
+                                            explanation. "We've played against both and both are impossible to defend,
+                                            but Messi had much lower physical conditions from birth on."</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="container">
+                                        <h6 class="notes">Show Notes ></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card-comment card" style="border-radius: 20px !important; height:38rem;">
+                                <img src="assets/img/cards/4.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="container">
+                                        <h5 class="card-title">What does Zidane say about Messi?</h5>
+                                        <p class="card-text">"Messi is the most complete player I've ever seen. He's the
+                                            best passer and the best finisher, he's the best player." Zinedine Zidane
+                                            has named Paris Saint Germain player, Lionel Messi as the most complete
+                                            player he has ever seen. "Nobody has done what he has" - What Zidane said
+                                            about best ever player debate dominated by Messi and Ronaldo resurfaces as
+                                            PSG links emerge.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="container">
+                                        <h6 class="notes">Show Notes ></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card-comment card" style="border-radius: 20px !important; height:38rem;">
+                                <img src="assets/img/cards/5.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="container">
+                                        <h5 class="card-title">Sir Alex Ferguson's no-nonsense stance on Cristiano Ronaldo vs Lionel Messi rivalry</h5>
+                                        <p class="card-text">
+                                            "People say 'who is the best player in the world? ' And plenty of people
+                                            quite rightly say Messi - you can't dispute that opinion," Ferguson
+                                            explained back in 2015. "But Ronaldo could play for Millwall, Queens Park
+                                            Rangers, Doncaster Rovers… anyone, and score a hat-trick in a game. I'm not
+                                            sure Messi could do it.p>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="container">
+                                        <h6 class="notes">Show Notes ></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card-comment card" style="border-radius: 20px !important; height:38rem;">
+                                <img src="assets/img/cards/6.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="container">
+                                        <h5 class="card-title">Luis Enrique: Messi is the best ever</h5>
+                                        <p class="card-text">Enrique cut a jubilant figure after the full-time whistle and he made clear in his post-match press conference that the Argentine was like no other."He is the best player in history, he is incredibly decisive at all times and I have seen a lot of football, it is a great pleasure for all Cules that he is one of us," he explained.</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="container">
+                                        <h6 class="notes">Show Notes ></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container px-5">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card" style="border-radius: 20px !important;">
+                                <div class="card-note card-body text-center px-5 py-4">
+                                    <i class="bi bi-fire display-6"></i>
+                                    <h5 class="card-title mt-3">TRENDING GOALS</h5>
+                                    <p class="card-text">Find the videos and articles that are trending goals.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="border-radius: 20px !important;">
+                                <div class="card-note card-body text-center px-5 py-4">
+                                    <i class="bi bi-clock-fill display-6"></i>
+                                    <h5 class="card-title mt-3">MATCHDAY</h5>
+                                    <p class="card-text">Catch up on all of the latest match football.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="border-radius: 20px !important;">
+                                <div class="card-note card-body text-center px-5 py-4">
+                                    <i class="bi bi-archive-fill display-6"></i>
+                                    <h5 class="card-title mt-3">LEGEND</h5>
+                                    <p class="card-text">Explore the archives goal and dribling about Messi.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="present-videos bg-dark container-fluid py-5">
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-md-2 g-1">
+                        <div class="card-videos col px-2">
+                            <div class="card bg-dark text-white p-0" style="border-radius: 20px !important;">
+                                <div class="card-body text-center p-5 mx-2">
+                                    <small class="notes font-weight-bold">WATCH NOW</small>
+                                    <h3 class="card-title mt-3">Best Goal Leo Messi</h3>
+                                    <p class="card-text">Every game, this player creates goals and makes history. He is the best in the world right now. Because he has been doing it for years</p>
+                                    <a href="#" class="btn btn-secondary px-4 py-2"
+                                        style="background-color: white; color: #212510; border-radius: 20px; ">Explore
+                                        Goal Videos</a>
+                                </div>
+                                <div class="row p-0">
+                                    <main class="container">
+                                        <div class="row g-3 g-md-3">
+                                            <div class="col-4 col-md-4">
+                                                <img src="assets/img/gallery/1.jpeg" alt="" class="w-100"
+                                                    style="border-top-right-radius: 10px; border-bottom-right-radius: 10px;">
+                                            </div>
+                                            <div class="col-4 col-md-4">
+
+                                                <img src="assets/img/gallery/2.jpeg" alt="" class="w-100"
+                                                    style="border-radius: 10px;">
+                                            </div>
+                                            <div class="col-4 col-md-4">
+
+                                                <img src="assets/img/gallery/3.jpeg" alt="" class="w-100"
+                                                    style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
+                                            </div>
+                                            <div class="col-4 col-md-4">
+
+                                                <img src="assets/img/gallery/4.jpeg" alt="" class="w-100"
+                                                    style="border-top-right-radius: 10px; border-bottom-right-radius: 10px;"
+                                                    style="border-radius: 10px;">
+                                            </div>
+                                            <div class="col-4 col-md-4">
+
+                                                <img src="assets/img/gallery/5.jpeg" alt="" class="w-100"
+                                                    style="border-radius: 10px;">
+                                            </div>
+                                            <div class="col-4 col-md-4">
+
+                                                <img src="assets/img/gallery/6.jpeg" alt="" class="w-100"
+                                                    style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
+                                            </div>
+                                        </div>
+                                    </main>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-videos col px-2">
+                            <div class="card bg-dark text-white p-0" style="border-radius: 10px !important;">
+                                <div class="card-body text-center p-5 mx-2">
+                                    <small class="notes font-weight-bold">Follow Now</small>
+                                    <h3 class="card-title mt-3">Sunday, 24 July</h3>
+                                    <p class="card-text">Currently, Messi has 351 million followers on Instagram. It is undeniable, Messi is a player who is very well known throughout the world. GOAT (Greatest Of All Time)</p>
+                                    <a href="#" class="btn btn-secondary px-4 py-2"
+                                        style="background-color: white; color: #212510; border-radius: 20px; ">Follow
+                                        Now</a>
+                                </div>
+                                <div class="row p-0">
+                                    <main class="container">
+                                        <div class="row g-3 g-md-3">
+                                            <div class="col-4 col-md-4">
+                                                <img src="assets/img/gallery/7.jpeg" alt="" class="w-100"
+                                                    style="border-top-right-radius: 10px; border-bottom-right-radius: 10px;">
+                                            </div>
+                                            <div class="col-4 col-md-4">
+
+                                                <img src="assets/img/gallery/8.jpeg" alt="" class="w-100"
+                                                    style="border-radius: 10px;">
+                                            </div>
+                                            <div class="col-4 col-md-4">
+
+                                                <img src="assets/img/gallery/9.jpeg" alt="" class="w-100"
+                                                    style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
+                                            </div>
+                                            <div class="col-4 col-md-4">
+
+                                                <img src="assets/img/gallery/10.jpeg" alt="" class="w-100"
+                                                    style="border-top-right-radius: 10px; border-bottom-right-radius: 10px;"
+                                                    style="border-radius: 10px;">
+                                            </div>
+                                            <div class="col-4 col-md-4">
+
+                                                <img src="assets/img/gallery/11.png" alt="" class="w-100"
+                                                    style="border-radius: 10px;">
+                                            </div>
+                                            <div class="col-4 col-md-4">
+
+                                                <img src="assets/img/gallery/12.jpeg" alt="" class="w-100"
+                                                    style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
+                                            </div>
+                                        </div>
+                                    </main>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="get-note container-fluid text-center p-5 text-white">
+                    <div class="row justify-content-center">
+                        <h4>GET THE WEEKLY SUMMARY</h4>
+                        <p>Join 7,500+ including Fortune 500 CEOs, championship coaches, <br> and bestselling authors
+                            who
+                            get my free
+                            weekly summary.</p>
+                        <form class="d-flex col-lg-5 align-items-center my-4" role="search">
+                            <input class="form-control me-2" value="" placeholder="Enter your email">
+                            <a class="btn btn-outline-secondary text-dark col-lg" type="submit"
+                                style="background-color: white !important; ">Try</a>
+                        </form>
+                        <p class="text-muted">By subscribing, you agree to our privacy policy.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="footer-note p-2 pt-md-11">
+                <div class="container-fluid p-5">
+                    <div class="row g-1 g-md-2">
+                        <div class="col-12 col-md-4">
+                            <p class="text-white">
+                                Lionel Messi, in full Lionel Andrés Messi, also called Leo Messi, (born June 24, 1987, Rosario, Argentina), Argentine-born football (soccer) player who was named Fédération Internationale de Football Association (FIFA) world player of the year six times (2009–12, 2015, and 2019).
+                            </p>
+                            <h3 class="navbar-brand mt-5 text-white">
+                                Lionel Messi
+                            </h3>
+                        </div>
+                        <div class="col-12 col-md-8 px-5">
+                            <div class="row g-1 g-md-4">
+                                <div class="categories col-12 col-md-3">
+                                    <p class="font-weight-bold text-white">Explore</p>
+                                    <a href="#" class="dropbtn nav-link px-0 py-3 text-muted">Most Popular</a>
+                                    <a href="#" class="dropbtn nav-link px-0 py-3 text-muted">Most Rexent</a>
+                                    <a href="#" class="dropbtn nav-link px-0 py-3 text-muted">Topics & Tags</a>
+                                    <a href="#" class="dropbtn nav-link px-0 py-3 text-muted">Friday Five</a>
+                                </div>
+                                <div class="categories col-12 col-md-3">
+                                    <p class="font-weight-bold text-white">Quitliers</p>
+                                    <a href="#" class="dropbtn nav-link px-0 py-3 text-muted">Episodes</a>
+                                    <a href="#" class="dropbtn nav-link px-0 py-3 text-muted">Subscribe Now</a>
+                                    <a href="#" class="dropbtn nav-link px-0 py-3 text-muted">About the Show/a>
+                                        <a href="#" class="dropbtn nav-link px-0 py-3 text-muted">Sponsors</a>
+                                </div>
+                                <div class="categories col-12 col-md-3">
+                                    <p class="font-weight-bold text-white">Articles</p>
+                                    <a href="#" class="dropbtn nav-link px-0 py-3 text-muted">Show Notes</a>
+                                    <a href="#" class="dropbtn nav-link px-0 py-3 text-muted">Transcripts</a>
+                                    <a href="#" class="dropbtn nav-link px-0 py-3 text-muted">Essays</a>
+                                    <a href="#" class="dropbtn nav-link px-0 py-3 text-muted">Snippets</a>
+                                </div>
+                                <div class="categories col-12 col-md-3">
+                                    <p class="font-weight-bold text-white">More</p>
+                                    <a href="#" class="dropbtn nav-link px-0 py-3 text-muted">About Daniel</a>
+                                    <a href="#" class="dropbtn nav-link px-0 py-3 text-muted">Business Card</a>
+                                    <a href="#" class="dropbtn nav-link px-0 py-3 text-muted">Newsroom</a>
+                                    <a href="#" class="dropbtn nav-link px-0 py-3 text-muted">Contact</a>
+                                </div>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer p-2 pt-md-11 pb-3" style="border-top: 0.1px solid #212510 !important;">
+            <div class="container-fluid px-5">
+                <div class="row g-1 g-md-2">
+                    <div class="col-12 col-md-8 p-0 text-muted">
+                        <small>Copyright © 2022 Fauzian Sebastian. All rights reserved.</small>
+                    </div>
+                    <div class="col-12 col-md-4 p-0 text-muted">
+                        <div class="row g-3 g-md-3 text-center">
+                            <div class="col-4 col-md-4 p-0">
+                                <a href="#" class="dropbtn nav-link p-0 text-muted"><small>Privacy & Terms</small>
+                                </a>
+                            </div>
+                            <div class="col-4 col-md-4 p-0">
+                                <a href="#" class="dropbtn nav-link p-0 text-muted"><small>Disclosures</small></a>
+                            </div>
+                            <div class="col-4 col-md-4 p-0">
+                                <a href="#" class="dropbtn nav-link p-0 text-muted"><small>Sitemap</small></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        </main>
+        <!-- Modal -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="footer modal-content p-4">
+                    <div class="container p-3">
+                        <p class="modal-title text-center text-white" id="searchModalLabel">Quickly find episodes,
+                            articles,
+                            and pages across the
+                            website.</p>
+                    </div>
+                    <div class="container p-3">
+                        <form role="search">
+                            <div class="row">
+                                <div class="d-flex align-items-center p-3">
+                                    <input class="form-control bg-dark text-center text-white" placeholder="Type here"
+                                        style="border-radius: 20px">
+                                </div>
+                            </div>
+                            <div class="form-group row text-center px-3">
+                                <button type="submit" class="btn btn-secondary text-white bg-dark"
+                                    style="border-radius: 20px;">Search</button>
+                                <button type="button" class="mt-2 btn btn-secondary text-white bg-dark"
+                                    style="border-radius: 20px;" data-bs-dismiss="modal">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="container py-2" style="border-top: 0.1px solid #212510 !important;">
+                        <div class="row row-cols-1 row-cols-md-3 g-4 text-white text-center">
+                            <div class="col-4 col-lg-4">
+                                <small class="bi bi-fire display-6"></small>
+                                <p class="card-text p-2">Popular</p>
+                            </div>
+                            <div class="col-4 col-lg-4">
+                                <small class="bi bi-clock-fill display-6"></small>
+                                <p class="card-text p-2">Recent</p>
+                            </div>
+                            <div class="col-4 col-lg-4">
+                                <small class="bi bi-archive-fill display-6"></small>
+                                <p class="card-text p-2">Browse All</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add bootstrap js cdn -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+
+        <!-- Add slick js  -->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="assets/slick/slick.min.js"></script>
+        <script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+
+</html>
